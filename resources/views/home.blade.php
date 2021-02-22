@@ -42,4 +42,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+       Echo.private('App.User.{{ auth()->id() }}')
+        .notification((notification) => {
+            console.log(notification.message);
+        });
+    </script>
+
 @endsection
