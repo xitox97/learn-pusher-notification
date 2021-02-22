@@ -12,6 +12,9 @@
 
             <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
 
+
+                <livewire:notifications />
+
                 <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
                     Dashboard
                 </div>
@@ -43,11 +46,11 @@
         </div>
     </div>
 
-    <script>
+   {{-- <script>
        Echo.private('App.User.{{ auth()->id() }}')
         .notification((notification) => {
             console.log(notification.message);
         });
-    </script>
+    </script> --}}
 
 @endsection
