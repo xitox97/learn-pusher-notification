@@ -42,6 +42,10 @@
                         @endforeach
                     </ul>
                 </div>
+
+                <div>
+                <livewire:presence />
+                </div>
             </div>
         </div>
     </div>
